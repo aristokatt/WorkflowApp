@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//Takes in a list of activities and sorts them in a workflow
+//Takes in a list of activities and creates a workflow
 public class Workflow
 {
     private readonly List<IActivity> _workflow;
