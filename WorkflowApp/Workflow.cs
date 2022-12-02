@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-public class Workflow //: IEnumerable<IActivity>
+//Takes in a list of activities and sorts them in a workflow
+public class Workflow
 {
-    //public List<IActivity> Activities { get; set; }
     private readonly List<IActivity> _workflow;
     public Workflow(List<IActivity> activities)
     {
@@ -11,18 +11,6 @@ public class Workflow //: IEnumerable<IActivity>
     {
         return _workflow;
     }
-
-    //public IEnumerator<IActivity> GetEnumerator()
-    //{
-    //	foreach (IActivity activity in _workflow)
-    //		yield return activity;
-    //}
-
-
-    //IEnumerator IEnumerable.GetEnumerator()
-    //{
-    //	throw new NotImplementedException();
-    //}
 
     public void Add(IActivity activity)
     {
